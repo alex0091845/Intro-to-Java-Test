@@ -1,0 +1,13 @@
+title: My Java Textbook
+author: Alex Chow
+execute:
+  execute_notebooks: cache  # This runs code during 'build' to show outputs
+
+launch_buttons:
+  binderhub_url: "https://mybinder.org"
+  thebe: true              # This adds the 'Live Code' button
+  notebook_interface: "jupyterlab"
+
+repository:
+  url: https://github.com/alex0091845/Intro-to-Java-Test
+  branch: main
