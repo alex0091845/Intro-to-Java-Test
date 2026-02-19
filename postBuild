@@ -1,10 +1,13 @@
 #!/bin/bash
 
-version=1.0-a7
-curl -L https://github.com/dflib/jjava/releases/download/$version/jjava-$version-kernelspec.zip -o jjava-$version-kernelspec.zip
-unzip jjava-$version-kernelspec.zip
+versionStr=1.0-a7
+version=1.0a7
+curl -L https://github.com/dflib/jjava/releases/download/$versionStr/jjava-$version.tar.gz
+echo "Unzipping jjava called jjava-$version.tar.gz?..."
+
+tar -xzf jjava-$version.tar.gz
 ls -al
 
-echo "Installing jjava kernel spec for Jupyter..."
-jupyter kernelspec install jjava-$version-kernelspec --user --name=java
-rm jjava-$version-kernelspec.zip
+echo "Installing jjava for Jupyter..."
+jupyter kernelspec install jjava-$version --user --name=java
+rm jjava-$version.tar.gz
