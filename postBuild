@@ -2,7 +2,7 @@
 
 versionStr=1.0-a7
 version=1.0a7
-curl -L https://github.com/dflib/jjava/releases/download/$versionStr/jjava-$version.tar.gz
+curl -L https://github.com/dflib/jjava/releases/download/$versionStr/jjava-$version.tar.gz -o jjava-$version.tar.gz
 echo "Unzipping jjava called jjava-$version.tar.gz?..."
 
 tar -xzf jjava-$version.tar.gz
