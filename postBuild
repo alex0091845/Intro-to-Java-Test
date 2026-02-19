@@ -3,5 +3,5 @@
 version=1.0-a7
 curl -L https://github.com/dflib/jjava/releases/download/$version/jjava-$version-kernelspec.zip -o jjava.zip
 unzip jjava.zip
-jupyter kernelspec install jjava-$version-kernelspec --user --name=java
+jupyter kernelspec install jjava --user --name=java
 rm jjava.zip
