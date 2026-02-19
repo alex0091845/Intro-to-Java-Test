@@ -1,7 +1,7 @@
 #!/bin/bash
 
 version=1.0-a7
-curl -L https://github.com/dflib/jjava/releases/download/$version/jjava-$version-kernelspec.zip
-unzip jjava.zip
+curl -L https://github.com/dflib/jjava/releases/download/$version/jjava-$version-kernelspec.zip -o jjava-$version-kernelspec.zip
+unzip jjava-$version-kernelspec.zip
 jupyter kernelspec install jjava-$version-kernelspec --user --name=java
-rm jjava.zip
+rm jjava-$version-kernelspec.zip
