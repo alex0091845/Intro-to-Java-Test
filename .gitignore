@@ -1,0 +1,18 @@
+# MyST / Sphinx / Jupyter Book
+_build/
+*.ipynb_checkpoints
+.jupyter_cache
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# Node.js (if using mystmd)
+node_modules/
+.myst/
+
+# OS Specific
+.DS_Store
+Thumbs.db
