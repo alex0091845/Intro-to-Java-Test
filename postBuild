@@ -3,5 +3,8 @@
 version=1.0-a7
 curl -L https://github.com/dflib/jjava/releases/download/$version/jjava-$version-kernelspec.zip -o jjava-$version-kernelspec.zip
 unzip jjava-$version-kernelspec.zip
+ls -al
+
+echo "Installing jjava kernel spec for Jupyter..."
 jupyter kernelspec install jjava-$version-kernelspec --user --name=java
 rm jjava-$version-kernelspec.zip
